@@ -1,0 +1,23 @@
+h1 {
+    color: #4E0714;
+    font-size: 185%;
+    font-family: "Playfair Display"; 
+}
+
+h3 {
+    color: #BF7E81;
+    font-size: 135%;
+    font-family: "Playfair Display";
+}
+
+p {
+    color: #000000;
+    font-size: 105%;
+    font-family: "Source Sans 3";
+}
+
+ol, ul, li {
+    color: #000000;
+    font-size: 100%;
+    font-family: "Source Sans 3";
+}
