@@ -1,23 +1,88 @@
+
+.hero {
+    text-align: center;
+    padding:20px;
+    background-image: url('https://i.pinimg.com/736x/b3/b6/3e/b3b63ed153f7f829b6b99bf8159212c4.jpg');
+    background-color: #FFFFFF;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.explore-work, .learn-more, .in-touch {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 20px;
+    background-color:#660000;
+    color: white;
+    border-radius: 5px;
+    font-size: 105%;
+}
+    
+
+.welcomestatement {
+    padding-bottom: 15px
+}
+
+.mainheading {
+    padding-top: 50px;
+}
+
+.purpose {
+    padding: 15px;
+    text-align:center;
+}
 h1 {
-    color: #4E0714;
-    font-size: 185%;
-    font-family: "Playfair Display"; 
+    color: #660000;
+    font-size: 300%;
+    font-family: "Playfair-Display", Georgia, serif;
 }
 
 h3 {
-    color: #BF7E81;
-    font-size: 135%;
-    font-family: "Playfair Display";
+    color: #660000;
+    font-size: 125%;
+    font-family: "Playfair-Display", Georgia, serif;
 }
 
+.quote {
+    background-color: #FADDDA;
+    border-radius: 5px;
+    font-family: "Playfair-Display", Georgia, serif;
+    font-size: 90%;
+    padding: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align:center;
+}
+
+.italic {
+    font-style: italic;
+    font-family: "Playfair-Display", Georgia, serif;
+}
 p {
     color: #000000;
     font-size: 105%;
-    font-family: "Source Sans 3";
+    font-family: "Source Sans 3", sans-serif;
 }
 
 ol, ul, li {
     color: #000000;
     font-size: 100%;
-    font-family: "Source Sans 3";
+    font-family: "Source Sans 3", sans-serif;
 }
+
+.push {
+    height: 60px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #C3737F;
+    height: 50px;
+    font-size: 90%;
+    text-align:center;
+}
+
