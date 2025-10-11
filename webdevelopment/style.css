@@ -1,13 +1,32 @@
+body {
+    padding-bottom: 60px;
+    margin:0;
+}
 
 .hero {
     text-align: center;
     padding:20px;
-    background-image: url('https://i.pinimg.com/736x/b3/b6/3e/b3b63ed153f7f829b6b99bf8159212c4.jpg');
+    background-image: url("webcontent/heroimage.jpg");
     background-color: #FFFFFF;
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+} 
+
+.welcomestatement {
+    padding-bottom: 30px;
+    max-width: 650px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 115%;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.mainheading {
+    padding-top: 27px;
 }
 
 .explore-work, .learn-more, .in-touch {
@@ -18,47 +37,51 @@
     color: white;
     border-radius: 5px;
     font-size: 105%;
-}
-    
-
-.welcomestatement {
-    padding-bottom: 15px;
+    text-decoration: none;
 }
 
-.mainheading {
-    padding-top: 50px;
+.explore-work:hover, .learn-more:hover, .in-touch:hover {
+    background-color:#FADDDA;
+    color: #660000;
+    text-decoration: none;
 }
-
 .purpose {
-    padding: 15px;
-    text-align:center;
+    padding: 20px;
+    max-width: 1025px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100%;
+    font-family: "Source Sans 3", sans-serif;
 }
 h1 {
     color: #660000;
-    font-size: 225%;
-    font-family: "Playfair-Display", Georgia, serif;
+    font-size: 300%;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 30px;
 }
 
 h3 {
     color: #660000;
     font-size: 125%;
-    font-family: "Playfair-Display", Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
 }
 
 .quote {
     background-color: #FADDDA;
     border-radius: 5px;
-    font-family: "Playfair-Display", Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 90%;
-    padding: 20px;
-    margin-left: 250px;
-    margin-right: 250px;
-    text-align:center;
+    padding: 10px 20px 20px 20px;
+    max-width: 875px;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .italic {
     font-style: italic;
-    font-family: "Playfair-Display", Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
 }
 p {
     color: #000000;
@@ -96,7 +119,7 @@ li {
    background-color:#FFFFFF;
    color: #660000;
    font-size: 115%;
-   font-family: "playfair-display", Georgia, serif;
+   font-family: "Playfair Display", Georgia, serif;
    padding: 10px;
    border: 4px solid #C3737F;
    margin: auto;
@@ -111,9 +134,7 @@ li {
     background-color:#660000;
     color: #FADDDA;
 }
-.push {
-    height: 60px;
-}
+
 footer {
     position: fixed;
     left: 0;
