@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px; 
-
+    text-align:center;
 }
 
 .nav_item_drop li {
@@ -67,14 +67,6 @@
 .nav_list li {
     position:relative;
 }
-
-.nav_item_drop {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    display: none;
-}
-
 .nav_list li:hover .nav_item_drop {
     display: block;
 }
