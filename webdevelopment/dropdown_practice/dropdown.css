@@ -25,11 +25,11 @@
 .nav_item_drop {
     position: absolute;
     top: 64px;
-    left: -16px;
+    left: 0px;
     box-shadow: 0 0 10px #FADDDA;
     background-color: #FFFFFF;
     border-radius: 4px;
-    width: 192px;
+    width: 100%;
     padding: 8px 16px;
     display: none;
     flex-direction: column;
