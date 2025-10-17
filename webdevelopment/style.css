@@ -95,7 +95,7 @@ ul {
     font-family: "Source Sans 3", sans-serif;
 }
 
-li {
+.education li {
     padding: 2px;
     list-style-type: circle;
 }

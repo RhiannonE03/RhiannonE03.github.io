@@ -1,0 +1,41 @@
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px #FADDDA;
+}
+
+.primary-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 30px 40px;
+    
+}
+
+.primary-nav a:hover, .primary-nav a:focus {
+    background-color: #FADDDA;
+    color: #660000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.primary-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color:#660000;
+    font-weight:bold;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.logo {
+    max-width: 225px;
+    max-height: 85px;
+    
+}
+
+

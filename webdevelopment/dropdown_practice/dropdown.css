@@ -1,0 +1,80 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 0 10px #FADDDA;
+}
+
+.nav_list {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    margin: 0 32px;
+}
+
+.nav_list_item {
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    padding: 24px 16px; 
+}
+
+.nav_item_drop {
+    position: absolute;
+    top: 64px;
+    left: -16px;
+    box-shadow: 0 0 10px #FADDDA;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    width: 192px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+
+}
+
+.nav_item_drop li {
+    list-style: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #660000;
+
+}
+
+.nav_item_drop li:hover, .nav_item_drop li:focus {
+    background-color: #FADDDA;
+}
+
+.nav_list li a {
+    display: block;
+    padding: 8px 16px;
+    color:#660000;
+    text-decoration: none;
+}
+
+.nav_list li a:hover, .nav_list li a:focus {
+    color:#660000;
+    background-color: #FADDDA;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.nav_list li {
+    position:relative;
+}
+
+.nav_item_drop {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
+.nav_list li:hover .nav_item_drop {
+    display: block;
+}
