@@ -17,13 +17,13 @@
     background-color: #FADDDA;
     color: #660000;
     border-radius: 5px;
-    padding: 5px;
+    padding: 30px 40px;
 }
 
 .nav_list a {
     text-decoration: none;
     display: block;
-    padding: 5px;
+    padding: 30px 40px;
     color:#660000;
     font-weight:bold;
     font-family: "Playfair Display", Georgia, serif;
@@ -37,7 +37,7 @@
     background-color: #FFFFFF;
     border-radius: 4px;
     width: 100%;
-    padding: 8px 16px;
+    padding: 30px 40px;
     display: none;
     flex-direction: column;
     gap: 8px; 
@@ -46,7 +46,7 @@
 
 .nav_item_drop li {
     list-style: none;
-    padding: 8px 16px;
+    padding: 30px 40px;
     border-radius: 4px;
     color: #660000;
 
@@ -58,7 +58,7 @@
 
 .nav_list li a {
     display: block;
-    padding: 8px 16px;
+    padding: 30px 40px;
     color:#660000;
     text-decoration: none;
 }
@@ -68,7 +68,7 @@
     background-color: #FADDDA;
     font-weight: bold;
     border-radius: 5px;
-    padding: 8px 16px;
+    padding: 30px 40px;
 }
 
 .nav_list li {
