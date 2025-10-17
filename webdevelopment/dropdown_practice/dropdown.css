@@ -11,69 +11,60 @@
     gap: 20px;
     list-style: none;
     margin: 0;
-    padding: 30px 40px;
+    padding: 5px;
 }
+
+.nav_list li {
+    position:relative;
+}
+
 .nav_list a:hover, .nav_list a:focus {
     background-color: #FADDDA;
     color: #660000;
     border-radius: 5px;
-    padding: 30px 40px;
+    padding: 5px;
 }
 
 .nav_list a {
     text-decoration: none;
     display: block;
-    padding: 30px 40px;
+    padding: 5px;
     color:#660000;
     font-weight:bold;
     font-family: "Playfair Display", Georgia, serif;
 }
 
 .nav_item_drop {
-    position: absolute;
-    top: 64px;
-    left: 0px;
-    box-shadow: 0 0 10px #FADDDA;
+   display:none;
+    poisition: absolute;
+    top:100%;
+    left:0;
     background-color: #FFFFFF;
+    box-shadow: 0 0 10px #FADDDA;
     border-radius: 4px;
-    width: 100%;
-    padding: 30px 40px;
-    display: none;
+    min-width: 180px;
+    padding: 10px 0;
+    margin-top: 5px;
+    list-style: none;
     flex-direction: column;
-    gap: 8px; 
-    text-align:center;
+    gap: 0;
 }
 
 .nav_item_drop li {
-    list-style: none;
-    padding: 30px 40px;
-    border-radius: 4px;
-    color: #660000;
+   padding: 0;
+}
 
+.nav_item_drop a {
+    padding: 10px 20px;
+    white-space: nonwrap;
 }
 
 .nav_item_drop li:hover, .nav_item_drop li:focus {
     background-color: #FADDDA;
 }
 
-.nav_list li a {
-    display: block;
-    padding: 30px 40px;
-    color:#660000;
-    text-decoration: none;
+.nav_list:hover, .nav_item_drop {
+    display: flex;
 }
 
-.nav_list li a:hover, .nav_list li a:focus {
-    color:#660000;
-    background-color: #FADDDA;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 30px 40px;
-}
 
-.nav_list li {
-    position:relative;
-}
-.nav_list li:hover .nav_item_drop {
-    display: block;
-}
