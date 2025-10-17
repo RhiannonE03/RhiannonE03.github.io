@@ -30,7 +30,7 @@
 }
 
 .nav_item_drop {
-    position: absolute;
+    display: none;
     top: 64px;
     left: 0px;
     box-shadow: 0 0 10px #FADDDA;
@@ -38,7 +38,6 @@
     border-radius: 4px;
     width: 100%;
     padding: 8px 16px;
-    display: none;
     flex-direction: column;
     gap: 8px; 
     text-align:center;
