@@ -1,46 +1,40 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    background-color: #FFFFFF;
+    position:fixed;
+    width: 100%;
+    margin: 0;
     box-shadow: 0 0 10px #FADDDA;
 }
 
-.nav_list ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 30px 40px;
-}
-.nav_list a:hover, .nav_list a:focus {
-    background-color: #FADDDA;
-    color: #660000;
-    border-radius: 5px;
-    padding: 5px;
+.nav_list {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    margin: 0 32px;
 }
 
-.nav_list a {
-    text-decoration: none;
-    display: block;
-    padding: 5px;
-    color:#660000;
-    font-weight:bold;
-    font-family: "Playfair Display", Georgia, serif;
+.nav_list_item {
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    padding: 24px 16px; 
 }
 
 .nav_item_drop {
-    display: none;
+    position: absolute;
     top: 64px;
-    left: 0px;
+    left: -16px;
     box-shadow: 0 0 10px #FADDDA;
     background-color: #FFFFFF;
     border-radius: 4px;
-    width: 100%;
+    width: 192px;
     padding: 8px 16px;
+    display: flex;
     flex-direction: column;
     gap: 8px; 
-    text-align:center;
+
 }
 
 .nav_item_drop li {
@@ -73,6 +67,14 @@
 .nav_list li {
     position:relative;
 }
+
+.nav_item_drop {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
 .nav_list li:hover .nav_item_drop {
     display: block;
 }

@@ -73,8 +73,3 @@
 .primary-nav li:hover .nav-dropdown {
     display: flex;
 }
-
-.logo {
-    max-width: 250px;
-    max-height: 85px;
-}
