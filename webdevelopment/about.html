@@ -19,10 +19,29 @@
 
 
             <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file for styling -->
-            
+            <link rel="stylesheet" href="nav.css">
+        </head> 
+         
         <body> <!-- Contains visable content displayed on webpage-->
             <header> <!-- Displayed at top of page -->
-                <!-- Logo and Navigation -->
+                <div class="navigation">
+                <img src="webcontent/Logo1.png" alt="Logo Image: Rhiannon Elizabeth" class="logo"> <!--Add Logo Image Here-->
+                 <nav class="primary-nav">
+                    <ul>
+                        <li><a href="index.html"> HOME </a></li>
+                        <li><a href="about.html"> ABOUT </a></li>
+                        <li><a href="projects.html"> MY WORK </a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reflection.html"> REFLECTIONS </a></li>
+                        <li><a href="contact.html"> CONTACT </a></li>
+                    </ul>
+                 </nav>
+                </div>
                 <h1> All About Me </h1>
             </header>
             <main> <!-- main content goes within this section -->
@@ -31,7 +50,7 @@
                 <h3> Education </h3>
                 <ul class="education"> <!--Education List-->
                     <li> Past: High School Degree; Grain Valley High School and Penney High School (2020)</li>
-                    <li> Past: Associate of Arts in <a href="https://www.macc.edu/social-behavioral-science/" class="programlink" target="_blank">Social and Beahvioral Science</a>; Moberly Area Community College (2022)</li>
+                    <li> Past: Associate of Arts in <a href="https://www.macc.edu/social-behavioral-science/" class="programlink" target="_blank">Social and Behavioral Science</a>; Moberly Area Community College (2022)</li>
                     <li> Present: Bachelor of Educational Studies in <a href="https://online.missouri.edu/degrees-programs/mu/education/educational-studies/bes" class="programlink" target="_blank">Information Science and Learning Technologies</a>; University of Missouri (2026)</li>
                     <li> Future: Master of Science in <a href="https://online.missouri.edu/degrees-programs/mu/education/learning-technologies-and-design/ms" class="programlink" target="_blank">Learning Technologies and Design</a>; University of Missouri (2029)</li>
                 </ul>

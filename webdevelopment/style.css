@@ -1,9 +1,11 @@
 body {
-    padding-bottom: 60px;
     margin:0;
+    padding: 0 0 60px 0;
+    overflow-x: hidden;
 }
 
 .hero {
+    margin-top: 0;
     text-align: center;
     padding:20px;
     background-image: url("webcontent/heroimage.jpg");
@@ -135,6 +137,52 @@ ul {
     color: #FADDDA;
 }
 
+.reflections {
+    margin: 20px auto;
+    padding: 12px 20px;
+    max-width:1300px; 
+    border-radius: 25px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 100%;
+    text-align: justify;
+}
+
+.reflection-p-1:first-letter {
+    color: #C3737F;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: "Playfair Display", Georgia, Serif;
+    padding: 1px;
+}
+
+.reflection-p-2,
+.reflection-p-3,
+.reflection-p-4 {
+    text-indent: 40px;
+}
+
+.reflection-p-1,
+.reflection-p-2,
+.reflection-p-3,
+.reflection-p-4 {
+    padding: 4px;
+}
+
+.reflection-p-1:hover,
+.reflection-p-2:hover,
+.reflection-p-3:hover,
+.reflection-p-4:hover {
+    background-color: #FADDDA;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.reflections-header {
+    text-align: center;
+    color: #660000;
+    font-family: "Playfair Display", Georgia, Serif;
+
+}
 footer {
     position: fixed;
     left: 0;

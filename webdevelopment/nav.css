@@ -5,6 +5,9 @@
     gap: 20px;
     background-color: #FFFFFF;
     box-shadow: 0 0 10px #FADDDA;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .primary-nav > ul {
@@ -13,6 +16,7 @@
     list-style: none;
     margin: 0;
     padding: 30px 40px;
+    flex-wrap: wrap;
     
 }
 
@@ -77,4 +81,5 @@
 .logo {
     max-width: 250px;
     max-height: 85px;
+    padding: 0 10px 10px 0px;
 }
