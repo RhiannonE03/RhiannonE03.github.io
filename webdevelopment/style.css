@@ -86,6 +86,28 @@ h3 {
     font-family: "Playfair Display", Georgia, serif;
 }
 
+@media print {
+    .navigation, 
+    .intro-about-photo img, 
+    .intro-about-video video, 
+    .resume-link 
+    .about-section h1 {
+        display: none;
+    }
+
+    body .about-section-content {
+       background-color: #FFFFFF;
+       color: #000000;
+       font-family: serif;
+       margin: 1in;
+    }
+
+}
+
+.h1-print-only {
+    display: none;
+}
+
 .about-section {
     margin: 15px;
 }
