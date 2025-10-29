@@ -95,12 +95,13 @@ h3 {
         display: none;
     }
 
-    body .about-section-content {
+    .about-section-content body, .about-section-content h1 {
        background-color: #FFFFFF;
        color: #000000;
        font-family: serif;
        margin: 1in;
     }
+
 
 }
 
