@@ -88,21 +88,38 @@ h3 {
 
 @media print {
     .navigation, 
+    .about-page-content header,
     .intro-about-photo img, 
     .intro-about-video video, 
-    .resume-link 
-    .about-section h1 {
+    .resume-link,
+    .about-section > h1 {
         display: none;
     }
-
-    .about-section-content body, .about-section-content h1 {
+    .h1-print-only {
+        display: block;
+        color: #000000;
+        font-family: serif;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+    .about-section-content body {
        background-color: #FFFFFF;
        color: #000000;
        font-family: serif;
        margin: 1in;
+       padding: 0;
     }
-
-
+    .about-section {
+        margin:0;
+    }
+    .about-section h3,
+    .education,
+    .education li,
+    .programlink {
+        color: #000000;
+        font-family: serif;
+    }
+    
 }
 
 .h1-print-only {
@@ -253,4 +270,3 @@ footer {
     font-size: 90%;
     text-align:center;
 }
-
