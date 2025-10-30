@@ -167,6 +167,7 @@ h3 {
     font-size: 200%;
     font-family: "Playfair Display", Georgia, serif;
 }
+
 p {
     color: #000000;
     font-size: 105%;
@@ -187,6 +188,7 @@ p {
     border-radius: 5px;
     border: 3px solid #660000;
 }
+
 ul {
     color: #000000;
     font-size: 100%;
@@ -202,10 +204,10 @@ ul {
     color: #C3737F;
     text-decoration:none;
 }
+
 .programlink:hover {
     color:#660000;
     text-decoration:underline;
-
 }
 
 .education {
@@ -213,7 +215,6 @@ ul {
 }
 
 .resume-link {
-   display: flex; 
    background-color:#FFFFFF;
    color: #660000;
    font-size: 100%;
@@ -224,7 +225,6 @@ ul {
    border-radius: 4px;
    text-decoration: none;
    text-align: center;
-   justify-content: center;
    width: 280px;
 }
 
