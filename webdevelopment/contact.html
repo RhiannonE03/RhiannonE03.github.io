@@ -47,7 +47,8 @@
             <main> <!-- main content goes within this section -->
                 <form action="mailto:rhiraines03@gmail.com?Subject=Form%20Submission" method="POST" enctype="text/plain"> 
                     <ul>
-                        <li> <label for="title"> Title: </label> <select id="title" name="title">
+                        <li> <label for="title"> Title: </label> <select id="title" name="title" required>
+                                <option value="" disabled selected>Select Title</option>
                                 <option>Mr.</option>
                                 <option>Mrs.</option>
                                 <option>Ms.</option>
@@ -57,16 +58,16 @@
                         <li>
                             <label> Gender: </label>
                             <div class="gender-options">
-                                <label for="male"> <input type="radio" id="male" name="gender" value="male"> Male </label>  
-                                <label for="female"> <input type="radio" id="female" name="gender" value="female"> Female </label>  
-                                <label for="non_binary"> <input type="radio" id="non_binary" name="gender" value="non_binary"> Non-Binary </label> 
-                                <label for="prefer_not_to_say"> <input type="radio" id="prefer_not_to_say" name="gender" value="prefer_not_to_say"> Prefer Not to Say </label> 
+                                <label for="male"> <input type="radio" id="male" name="gender" value="male" required> Male </label>  
+                                <label for="female"> <input type="radio" id="female" name="gender" value="female" required> Female </label>  
+                                <label for="non_binary"> <input type="radio" id="non_binary" name="gender" value="non_binary" required> Non-Binary </label> 
+                                <label for="prefer_not_to_say"> <input type="radio" id="prefer_not_to_say" name="gender" value="prefer_not_to_say" required> Prefer Not to Say </label> 
                             </div>
                         </li>
-                        <li> <label for="name"> Name: </label> <input type="text" id="name" name="name" placeholder="enter full name"></li>
-                        <li> <label for="email"> Email: </label> <input type="email" id="email" name="email" placeholder="email"></li>
+                        <li> <label for="name"> Name: </label> <input type="text" id="name" name="name" placeholder="enter full name" required></li>
+                        <li> <label for="email"> Email: </label> <input type="email" id="email" name="email" placeholder="email" required></li>
                         <li> <label for="message"> Message: </label>
-                            <textarea id="message" name="message" rows="5" cols="50" maxlength="500" placeholder="type your message here"></textarea></li>
+                            <textarea id="message" name="message" rows="5" cols="50" maxlength="500" placeholder="type your message here" required></textarea></li>
                     </ul>
                     <p><input type="submit" value="Submit"></p>
                 </form>    
