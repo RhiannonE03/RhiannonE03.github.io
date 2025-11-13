@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 .primary-nav > ul {
     display: flex;
     gap: 20px;
@@ -83,3 +87,21 @@
     max-height: 85px;
     padding: 0 10px 10px 0px;
 }
+
+.primary-nav {
+    display: none;
+}
+
+#menu-toggle:checked ~ .primary-nav {
+    display: block;
+} 
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .primary-nav {
+        display: block;
+    }
+} 

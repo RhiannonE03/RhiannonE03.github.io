@@ -275,7 +275,7 @@ video {
 
 /* RESPONSIVE ABOUT PAGE GRID STYLING */
 
-@media (max-width: 1080px) {
+@media (max-width:768px) {
     .aboutpage-grid {
         grid-template-columns: 1fr; 
         margin-bottom: 15px;
