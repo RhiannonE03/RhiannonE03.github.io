@@ -280,7 +280,7 @@
     margin-left: auto;
 }
 
-@media (min-width: 965px) {
+@media (min-width: 964px) {
     .hamburger {
         display: none;
     }
