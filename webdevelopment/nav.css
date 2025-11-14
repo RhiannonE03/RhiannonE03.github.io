@@ -97,7 +97,7 @@
 } 
 
 /* TABLET STYLING */
-@media (max-width: 969px) and (min-width: 601px) {
+@media (max-width: 966px) and (min-width: 601px) {
     .primary-nav > ul {
         flex-direction: column;
         padding: 0;
