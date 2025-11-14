@@ -96,7 +96,8 @@
     display: block;
 } 
 
-@media (max-width: 767px) {
+/* TABLET STYLING */
+@media (max-width: 969px) and (min-width: 601px) {
     .primary-nav > ul {
         flex-direction: column;
         padding: 0;
@@ -166,14 +167,112 @@
         border-radius: 0;
    }
 
-   .nav-dropdown li a:hover,
-    .nav-dropdown li a:focus {
-          background-color:transparent;
-          padding: 15px 20px;
+   .nav-dropdown li a:hover, 
+   .nav-dropdown li a:focus {
+        background-color:transparent;
+        padding: 15px 20px;
     }
 
 }
 
+/* PHONE STYLING */
+@media (max-width: 600px) {
+    .navigation {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .hamburger {
+        padding: 10px 20px;
+    }
+
+    .primary-nav {
+        width: 100%;
+        order: 3;
+    }
+
+    .primary-nav > ul {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        background-color: #FADDDA;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    .primary-nav > ul > li {
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    .primary-nav > ul > li:last-child {
+        border-bottom: none;
+    }
+
+    .primary-nav > ul > li > a {
+        padding: 15px 20px;
+        border-radius: 0;
+    }
+
+    .primary-nav > ul > li > a:hover, 
+    .primary-nav > ul > li > a:focus {
+        background-color: #F5C9C5;
+        border-radius: 0;
+        padding: 15px 20px;
+    }
+
+    .nav-dropdown {
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: #F5C9C5;
+        min-width: 100%;
+        padding: 0;
+        gap: 0;
+        transform: none;
+        left: auto;
+        top: auto;
+    }
+
+    .nav-dropdown li {
+        background-color: #F5B5AE;
+        margin-bottom: 0;
+        padding: 0;
+        border-bottom: 1px solid #FADDDA;
+    }
+
+    .nav-dropdown li:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    .nav-dropdown li:hover {
+        background-color: #F0A39B;
+    }
+
+    .nav-dropdown li a {
+        color: #660000;
+        padding: 12px 20px;
+        display: block;
+        font-weight: bold;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .nav-dropdown li a:hover,
+    .nav-dropdown li a:focus {
+        background-color: transparent;
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    .primary-nav li .nav-dropdown {
+        display: flex;
+    }
+}
 .hamburger {
     font-size: 30px;
     cursor: pointer;
@@ -181,7 +280,7 @@
     margin-left: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 965px) {
     .hamburger {
         display: none;
     }
