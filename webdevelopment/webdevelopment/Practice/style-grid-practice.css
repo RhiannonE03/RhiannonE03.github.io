@@ -1,0 +1,507 @@
+/* ALL PAGES */
+body {
+    margin:0px;
+    padding: 0 0 90px 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #660000;
+    font-size: 300%;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #660000;
+    font-size: 125%;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+p {
+    color: #000000;
+    font-size: 105%;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+ul {
+    color: #000000;
+    font-size: 100%;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/*INDEX PAGE STYLING*/
+.hero {
+    margin-top: 0;
+    text-align: center;
+    padding:20px;
+    background-image: url("webcontent/media/heroimage.jpg");
+    background-color: #FFFFFF;
+    min-height: 400px;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.welcomestatement {
+    padding-bottom: 30px;
+    max-width: 650px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 115%;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.mainheading {
+    padding-top: 27px;
+}
+
+.explore-work, .learn-more, .in-touch {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 10px;
+    background-color:#660000;
+    color: white;
+    border-radius: 5px;
+    font-size: 105%;
+    text-decoration: none;
+}
+
+.explore-work:hover, .learn-more:hover, .in-touch:hover {
+    background-color:#FADDDA;
+    color: #660000;
+    text-decoration: none;
+}
+.purpose {
+    padding: 20px;
+    max-width: 1025px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100%;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.quote {
+    background-color: #FADDDA;
+    border-radius: 5px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 90%;
+    padding: 10px 20px 20px 20px;
+    max-width: 875px;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+/* ABOUT PAGE STYLING */
+@media print {
+    .navigation, 
+    .about-page-content header,
+    .intro-about-photo img, 
+    .intro-about-video video, 
+    .resume-link,
+    .about-section > h1:not(.h1-print-only),
+    footer img {
+        display: none !important;
+    }
+    .h1-print-only {
+        display: block !important;
+        color: #000000 !important;
+        background-color: transparent !important;
+        font-family: serif !important;
+        font-size: 24px !important;
+        text-align: left !important;
+        margin-bottom: 12px !important;
+    }
+    body.about-page-content {
+       background-color: transparent !important;
+       color: #000000 !important;
+       font-family: serif !important;
+       margin: 1in !important;
+       padding: 0 !important;
+    }
+    .about-section {
+        margin:0 !important;
+        background-color: transparent !important;
+    }
+    .about-section h3,
+    .about-section p,
+    .education,
+    .education ul,
+    .education li,
+    .programlink,
+    .programlink a {
+        color: #000000 !important;
+        background-color: transparent !important;
+        font-family: serif !important;
+        font-size: inherit !important;
+        text-decoration: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .education {
+        color: #000000 !important;
+        background-color: transparent !important;
+        font-family: serif !important;
+        list-style-type: disc !important;
+        padding-left: 30px !important;
+        margin-bottom: 12px !important;
+    }
+    .education li {
+        color: #000000 !important;
+        background-color: transparent !important;
+        font-family: serif !important;
+        text-decoration: none !important;
+        margin-bottom: 6px !important;
+        padding-left: 5px !important;
+    }
+
+    .intro-about-photo,
+    .intro-about-video {
+        display: block !important;
+        background-color: transparent !important;
+    }
+}
+
+.h1-print-only {
+    display: none;
+}
+
+.about-section {
+    margin: 15px;
+}
+
+.about-section h1 {
+    font-size: 200%;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.intro-about-photo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.headshot {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 3px solid #660000;
+}
+
+.education li {
+    padding: 2px;
+    list-style-type: circle;
+}
+
+.programlink {
+    color: #C3737F;
+    text-decoration:none;
+}
+
+.programlink:hover {
+    color:#660000;
+    text-decoration:underline;
+}
+
+.education {
+    padding-bottom: 30px;
+}
+
+.resume-link {
+   display: flex; 
+   background-color:#FFFFFF;
+   color: #660000;
+   font-size: 100%;
+   font-family: "Playfair Display", Georgia, serif;
+   padding: 5px;
+   border: 4px solid #C3737F;
+   margin: auto;
+   border-radius: 4px;
+   text-decoration: none;
+   text-align: center;
+   justify-content: center;
+   width: 280px;
+}
+
+.resume-link:hover {
+    background-color:#FADDDA;
+    color: #660000;
+}
+
+.intro-about-video {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+video {
+    border-radius: 5px;
+    border: #660000 solid 4px;
+    flex-shrink: 0;
+    margin-right: 30px;
+ 
+}
+
+/* ABOUT PAGE GRID STYLING */
+.about-page-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.about-page-content header {
+    grid-row: 1;
+}
+
+.about-page-content main {
+    grid-row: 2;
+}
+
+.about-page-content footer {
+    grid-row: 3;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin: 15px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.about-section h1 {
+    grid-column: 1 / 3;
+}
+
+.intro-about-photo {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.about-section h3 {
+    grid-column: 1 / 3;
+}
+
+.intro-about-video {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: start;
+}
+
+.intro-about-video video {
+    order: 2;
+}
+
+.education {
+    order: 1;
+}
+
+.resume-link {
+    grid-column: 1 / 3;
+}
+
+/* PROJECTS PAGE STYLING - TO BE ADDED LATER*/
+
+/* REFLECTIONS PAGE STYLING */
+.reflections {
+    margin: 20px auto;
+    padding: 12px 20px;
+    max-width:1300px; 
+    border-radius: 25px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 100%;
+    text-align: justify;
+}
+
+.reflection-p-1:first-letter {
+    color: #C3737F;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: "Playfair Display", Georgia, Serif;
+    padding: 1px;
+}
+
+.reflection-p-2,
+.reflection-p-3,
+.reflection-p-4 {
+    text-indent: 40px;
+}
+
+.reflection-p-1,
+.reflection-p-2,
+.reflection-p-3,
+.reflection-p-4 {
+    padding: 4px;
+}
+
+.reflection-p-1:hover,
+.reflection-p-2:hover,
+.reflection-p-3:hover,
+.reflection-p-4:hover {
+    background-color: #FADDDA;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.reflections-header {
+    text-align: center;
+    color: #660000;
+    font-family: "Playfair Display", Georgia, Serif;
+
+}
+
+/*CONTACT PAGE STYLING */
+
+.contact-page main form {
+    max-width: 650px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+.contact-page main form ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-page main form label {
+    display: block;
+    color: #660000;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 110%;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-page main form li {
+    margin-bottom: 15px;
+}
+
+.contact-page main form li:has(.gender-options) > label {
+    display: block;
+    color: #660000;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 110%;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.contact-page .gender-options {
+    padding: 15px 0;
+    border: 3px solid #660000;
+    border-radius: 5px;
+}
+
+.contact-page main form input[type="text"],
+.contact-page main form input[type="email"],
+.contact-page main form select,
+.contact-page main form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #660000;
+    border-radius: 5px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+.contact-page main form input[type="text"]:focus,
+.contact-page main form input[type="email"]:focus,
+.contact-page main form select:focus,
+.contact-page main form textarea:focus {
+    outline: none;
+    border-color: #660000;
+    background-color: #FADDDA;
+}
+
+.contact-page main form select {
+    width: 200px;
+    height: 50px;
+}
+
+.contact-page .gender-options label {
+    display: inline;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #000000;
+}
+
+.contact-page main form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-page main form input[type="submit"] {
+   background-color: #660000;
+   color: #FFFFFF;
+   padding: 10px 30px;
+   border: 4px solid #660000;
+   border-radius: 5px;
+   font-size: 110%;
+   font-family: "Playfair Display", Georgia, serif;
+   display: block;
+   margin: 30px auto 0 auto;
+}
+
+.contact-page main form input[type="submit"]:hover {
+    background-color: #C3737F;
+    border: 4px solid #660000;
+}
+
+.contact-page header h1 {
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* FOOTER STYLING */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #C3737F;
+    height: 62px;
+    font-size: 90%;
+    text-align:center;
+    padding-top: 15px;
+}
+
+footer img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    position: relative;
+}
+
+footer img:last-of-type {
+    margin-left: 15px;
+}
+
+/* TESTING RESPONSIVE STYLING */
+@media screen and (max-width: 600px) {
+    h1 {
+        color: darkmagenta;
+        font-size: 1.5rem;
+    }
+}

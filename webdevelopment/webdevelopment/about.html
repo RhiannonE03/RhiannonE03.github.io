@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- This is the main HTML5 document declaration --> 
+    <html lang="en"> <!-- indicates intended language for webpage-->
+        <!--
+        Name: Rhiannon Chaffins
+        Date: 11/06/2025
+        Page: About Page
+        Description: About Page for Portfolio Website
+        -->
+        <head> 
+            <meta charset="utf-8"> <!-- Character encoding for the document -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile-friendly layout -->
+            <title> ABOUT </title> <!--This is the title of my web page listed on the tab section -->
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+            <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file for styling -->
+            <link rel="stylesheet" href="nav.css">
+            <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        </head> 
+        
+        <body class="about-page-content"> <!-- Contains visable content displayed on webpage-->
+            <header> <!-- Displayed at top of page -->
+                <div class="navigation">
+                <img src="webcontent/media/Logo1.png" alt="Logo Image: Rhiannon Elizabeth" class="logo"> 
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">☰</label>
+                 <nav class="primary-nav">
+                    <ul>
+                        <li><a href="index.html"> HOME </a></li>
+                        <li><a href="about.html"> ABOUT </a></li>
+                        <li><a href="project.html"> MY WORK </a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reflection.html"> REFLECTIONS </a></li>
+                        <li><a href="contact.html"> CONTACT </a></li>
+                    </ul>
+                 </nav>
+                </div>
+            </header>
+
+            <main class="about-section"> <!-- main content goes within this section -->
+                <h1> About Me </h1>
+                <div class="aboutpage-grid">
+                    <div class="aboutpage-text">
+                        <h1 class="h1-print-only">Rhiannon E Chaffins</h1>
+                        <p>Hello! My name is Rhiannon. I am 23 years old, an undergraduate learning design and technology student, and a full-time corporate employee. Driven by my interest in psychology and wellness, I completed an associate’s degree in Social and Behavioral Science in 2022. Before starting my bachelor’s studies, I took time to reflect on my priorities and personal growth. During that period, I worked as a substitute teacher and ultimately decided to continue pursuing my passion for well-being by studying psychology. In 2025, my plans evolved, and I transitioned to studying graphic design and learning technologies. After I finish my bachelor’s, I intend to further my education by earning a master’s degree in learning technologies and design. Outside of work and school, I enjoy reading, cooking, baking, and snuggling with my cats while watching tv. As a former competitive dancer of 14 years, I also love staying active through long walks and hikes, Pilates, and yoga. </p>
+                        <h3> Education </h3>
+                        <ul class="education"> <!--Education List-->
+                            <li> Past: High School Degree; Grain Valley High School and Penney High School (2020)</li>
+                            <li> Past: Associate of Arts in <a href="https://www.macc.edu/social-behavioral-science/" class="programlink" target="_blank">Social and Behavioral Science</a>; Moberly Area Community College (2022)</li>
+                            <li> Present: Bachelor of Educational Studies in <a href="https://online.missouri.edu/degrees-programs/mu/education/educational-studies/bes" class="programlink" target="_blank">Information Science and Learning Technologies</a>; University of Missouri (2026)</li>
+                            <li> Future: Master of Science in <a href="https://online.missouri.edu/degrees-programs/mu/education/learning-technologies-and-design/ms" class="programlink" target="_blank">Learning Technologies and Design</a>; University of Missouri (2029)</li>
+                        </ul>
+                    </div>
+
+                    <div class="aboutpage-photos">
+                        <img src="webcontent/media/selfie.jpg" alt="Selfie Style Photo" class="headshot">
+                        <img src="webcontent/media/cats3.jpg" alt="Photo of My Cats" class="catsphoto">
+                        <video controls width="300" aria-label="Introduction Video" class="introduction-video">
+                            <source src="webcontent/media/introvideo.mp4" type="video/mp4"> Your browser does not support this video 
+                        </video>
+                    </div>
+                </div>
+
+                <a href="webcontent/Chaffinsresume.pdf" class="resume-link" target="_blank"> Click Here to Download My Resume </a>
+            </main>
+
+            <footer> <!-- Displayed at bottom of page.-->
+                <img src="webcontent/media/icons8-phone-30.png" alt="Telephone Icon"> 123-456-7890
+                <img src="webcontent/media/icons8-email-30.png" alt="Email Icon"> rhiraines03@gmail.com 
+                <p>Rhiannon E Chaffins -- Current Date: Thursday, 11/06/2025</p>
+            </footer>
+        </body>
+    </html>

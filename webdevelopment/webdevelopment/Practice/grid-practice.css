@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 180px 1fr 350px;
+  grid-template-rows: 200px 1fr 100px;
+  gap: 10px;
+  height: 100vh;
+  max-height: 900px;
+}
+
+header, nav, main, aside, footer {
+  background-color: #FADDDA;
+  border: 2px solid #660000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+}
+
+header {
+  grid-column: 1 / 4;
+}
+
+footer {
+  grid-column: 1 / 4;
+}

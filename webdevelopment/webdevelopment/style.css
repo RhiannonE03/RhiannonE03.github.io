@@ -1,0 +1,633 @@
+/* ALL PAGES */
+body {
+    margin:0px;
+    padding: 0 0 90px 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #660000;
+    font-size: 300%;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #660000;
+    font-size: 125%;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+p {
+    color: #000000;
+    font-size: 105%;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+ul {
+    color: #000000;
+    font-size: 100%;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/*INDEX PAGE STYLING*/
+.hero {
+    margin-top: 0;
+    text-align: center;
+    padding:20px;
+    background-image: url("webcontent/media/heroimage.jpg");
+    background-color: #FFFFFF;
+    min-height: 400px;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.welcomestatement {
+    padding-bottom: 30px;
+    max-width: 650px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 115%;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.mainheading {
+    padding-top: 27px;
+}
+
+.explore-work, .learn-more, .in-touch {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 10px;
+    background-color:#660000;
+    color: white;
+    border-radius: 5px;
+    font-size: 105%;
+    text-decoration: none;
+}
+
+.explore-work:hover, .learn-more:hover, .in-touch:hover {
+    background-color:#FADDDA;
+    color: #660000;
+    text-decoration: none;
+}
+.purpose {
+    padding: 20px;
+    max-width: 1025px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100%;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.quote {
+    background-color: #FADDDA;
+    border-radius: 5px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 90%;
+    padding: 10px 20px 20px 20px;
+    max-width: 875px;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+/* ABOUT PAGE STYLING */
+@media print {
+    .navigation, 
+    .about-page-content header,
+    .intro-about-photo img, 
+    .intro-about-video video, 
+    .resume-link,
+    .about-section > h1:not(.h1-print-only),
+    footer img {
+        display: none !important;
+    }
+    .h1-print-only {
+        display: block !important;
+        color: #000000 !important;
+        background-color: transparent !important;
+        font-family: serif !important;
+        font-size: 24px !important;
+        text-align: left !important;
+        margin-bottom: 12px !important;
+    }
+    body.about-page-content {
+       background-color: transparent !important;
+       color: #000000 !important;
+       font-family: serif !important;
+       margin: 1in !important;
+       padding: 0 !important;
+    }
+    .about-section {
+        margin:0 !important;
+        background-color: transparent !important;
+    }
+    .about-section h3,
+    .about-section p,
+    .education,
+    .education ul,
+    .education li,
+    .programlink,
+    .programlink a {
+        color: #000000 !important;
+        background-color: transparent !important;
+        font-family: serif !important;
+        font-size: inherit !important;
+        text-decoration: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .education {
+        color: #000000 !important;
+        background-color: transparent !important;
+        font-family: serif !important;
+        list-style-type: disc !important;
+        padding-left: 30px !important;
+        margin-bottom: 12px !important;
+    }
+    .education li {
+        color: #000000 !important;
+        background-color: transparent !important;
+        font-family: serif !important;
+        text-decoration: none !important;
+        margin-bottom: 6px !important;
+        padding-left: 5px !important;
+    }
+
+    .intro-about-photo,
+    .intro-about-video {
+        display: block !important;
+        background-color: transparent !important;
+    }
+}
+
+.h1-print-only {
+    display: none;
+}
+
+.about-section {
+    margin: 15px;
+}
+
+.about-section h1 {
+    font-size: 200%;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.education li {
+    padding: 2px;
+    list-style-type: circle;
+}
+
+.programlink {
+    color: #C3737F;
+    text-decoration:none;
+}
+
+.programlink:hover {
+    color:#660000;
+    text-decoration:underline;
+}
+
+.education {
+    padding-bottom: 30px;
+}
+
+.resume-link {
+   display: flex; 
+   background-color:#FFFFFF;
+   color: #660000;
+   font-size: 100%;
+   font-family: "Playfair Display", Georgia, serif;
+   padding: 5px;
+   border: 4px solid #C3737F;
+   margin: auto;
+   border-radius: 4px;
+   text-decoration: none;
+   text-align: center;
+   justify-content: center;
+   width: 280px;
+}
+
+.resume-link:hover {
+    background-color:#FADDDA;
+    color: #660000;
+}
+
+
+/* ABOUT PAGE GRID STYLING */
+.aboutpage-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.aboutpage-text {
+    grid-column: 1;
+}
+
+.aboutpage-photos {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.headshot, .catsphoto {
+    width: 150px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 3px solid #660000;
+}
+
+.introduction-video {
+    grid-column: 1 / 3;
+    width: 100%;
+    max-width: 325px;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid #660000;
+    margin: 0;
+}
+
+video {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid #660000;
+    margin: 0;
+}
+
+/* RESPONSIVE ABOUT PAGE GRID STYLING */
+
+@media (max-width:965px) {
+    .aboutpage-grid {
+        grid-template-columns: 1fr; 
+        margin-bottom: 15px;
+        gap: 5px;
+    }
+
+    .aboutpage-text {
+        grid-row: 1;
+    }
+
+    .aboutpage-photos {
+        grid-row: 2;
+        grid-column: 1;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        margin: 0 auto;
+        max-width: 350px;
+    }
+
+    .introduction-video {
+        grid-column: 1 / 3;
+        margin: 10px auto;
+        max-width: 325px;
+    }
+
+    .headshot, .catsphoto {
+        margin: 0 auto;
+    }
+}
+
+/* PROJECTS PAGE STYLING */
+.projects {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.projects p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 105%;
+    line-height: 1.6;
+}
+
+.projects h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    text-align: center;
+    color: #660000;
+    font-size: 180%;
+}
+
+.projects-container {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#recent {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    position: sticky;
+    top: 20px;
+    align-self: start;
+}
+
+#project01,
+#project02,
+#project03 {
+    border: 3px solid #660000;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.rschpaper {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    border: 3px solid #660000;
+    border-radius: 3px;
+    display: block;
+    margin: 20px auto;
+}
+
+.instagram-media-project1,
+.substack-post-embed,
+.instagram-media-recent {
+    max-width: 600px !important;
+    min-width: 300px !important;
+    margin: 20px auto !important;
+}
+
+/* PROJECT PAGE RESPONSIVE STYLING - TABLET */
+@media (max-width: 1024px) {
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .projects-container {
+        grid-column: 1;
+    }
+
+    #recent {
+        grid-column: 1;
+        grid-row: auto;
+        position: relative;
+        top: 0;
+    }
+
+    .projects h2 {
+        font-size: 165%;
+        color: #660000;
+        font-family: "Playfair Display", Georgia, serif;
+    }
+
+    .projects p {
+        font-size: 100%;
+        font-family: "Source Sans 3", sans-serif;
+    }
+
+    .rschpaper {
+        max-width: 450px;
+        height: 320px;
+    }
+
+    .instagram-media-project1,
+    .substack-post-embed,
+    .instagram-media-recent {
+        max-width: 500px !important;
+    }
+}
+
+/* PROJECT PAGE RESPONSIVE STYLING - PHONE SPECIFIC */
+@media (max-width: 768px) {
+    .projects {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .projects h2 {
+        font-size: 140%;
+        color: #660000;
+        margin-bottom: 15px;
+    }
+
+    .projects p {
+        font-size: 95%;
+        line-height: 1.4;
+    }
+
+    #project01,
+    #project02,
+    #project03,
+    #recent {
+        padding: 15px;
+        border-width: 2px;
+    }
+
+    .rschpaper {
+        height: 300px;
+        max-width: 100%;
+        border-width: 2px;
+    }
+
+    .instagram-media-project1,
+    .substack-post-embed,
+    .instagram-media-recent {
+        max-width: 100% !important;
+        min-width: 280px !important;
+    }
+}
+
+/* REFLECTIONS PAGE STYLING */
+.reflections {
+    margin: 20px auto;
+    padding: 12px 20px;
+    max-width:1300px; 
+    border-radius: 25px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 100%;
+    text-align: justify;
+}
+
+.reflection-p-1:first-letter {
+    color: #C3737F;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: "Playfair Display", Georgia, Serif;
+    padding: 1px;
+}
+
+.reflection-p-2,
+.reflection-p-3,
+.reflection-p-4 {
+    text-indent: 40px;
+}
+
+.reflection-p-1,
+.reflection-p-2,
+.reflection-p-3,
+.reflection-p-4 {
+    padding: 4px;
+}
+
+.reflection-p-1:hover,
+.reflection-p-2:hover,
+.reflection-p-3:hover,
+.reflection-p-4:hover {
+    background-color: #FADDDA;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.reflections-header {
+    text-align: center;
+    color: #660000;
+    font-family: "Playfair Display", Georgia, Serif;
+
+}
+
+/*CONTACT PAGE STYLING */
+
+.contact-page main form {
+    max-width: 650px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+.contact-page main form ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-page main form label {
+    display: block;
+    color: #660000;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 110%;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-page main form li {
+    margin-bottom: 15px;
+}
+
+.contact-page main form li:has(.gender-options) > label {
+    display: block;
+    color: #660000;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 110%;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.contact-page .gender-options {
+    padding: 15px 0;
+    border: 3px solid #660000;
+    border-radius: 5px;
+}
+
+.contact-page main form input[type="text"],
+.contact-page main form input[type="email"],
+.contact-page main form select,
+.contact-page main form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #660000;
+    border-radius: 5px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+.contact-page main form input[type="text"]:focus,
+.contact-page main form input[type="email"]:focus,
+.contact-page main form select:focus,
+.contact-page main form textarea:focus {
+    outline: none;
+    border-color: #660000;
+    background-color: #FADDDA;
+}
+
+.contact-page main form select {
+    width: 200px;
+    height: 50px;
+}
+
+.contact-page .gender-options label {
+    display: inline;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #000000;
+}
+
+.contact-page main form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-page main form input[type="submit"] {
+   background-color: #660000;
+   color: #FFFFFF;
+   padding: 10px 30px;
+   border: 4px solid #660000;
+   border-radius: 5px;
+   font-size: 110%;
+   font-family: "Playfair Display", Georgia, serif;
+   display: block;
+   margin: 30px auto 0 auto;
+}
+
+.contact-page main form input[type="submit"]:hover {
+    background-color: #C3737F;
+    border: 4px solid #660000;
+}
+
+.contact-page header h1 {
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* FOOTER STYLING */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #C3737F;
+    height: 58px;
+    font-size: 85%;
+    text-align:center;
+    padding-top: 15px;
+    z-index: 50;
+}
+
+footer img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    position: relative;
+}
+
+footer img:last-of-type {
+    margin-left: 15px;
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- This is the main HTML5 document declaration --> 
+    <html lang="en"> <!-- indicates intended language for webpage-->
+        <!--
+        Name: Rhiannon Chaffins
+        Date: 11/02/2025
+        Page: Template
+        Description: Contact Page
+        -->
+        <head> 
+            <meta charset="utf-8"> <!-- Character encoding for the document -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile-friendly layout -->
+            <title> Contact </title> <!--This is the title of my web page listed on the tab section -->
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="style.css"> <!-- Main CSS Stylesheet -->
+            <link rel="stylesheet" href="nav.css"> <!-- Nav CSS Stylesheet-->
+            <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        </head>
+
+        <body class="contact-page"> <!-- Contains visible content displayed on webpage-->
+            <header> <!-- Displayed at top of page -->
+                <div class="navigation">
+                <img src="webcontent/media/Logo1.png" alt="Logo Image: Rhiannon Elizabeth" class="logo"> 
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">☰</label>
+                 <nav class="primary-nav">
+                    <ul>
+                        <li><a href="index.html"> HOME </a></li>
+                        <li><a href="about.html"> ABOUT </a></li>
+                        <li><a href="project.html"> MY WORK </a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reflection.html"> REFLECTIONS </a></li>
+                        <li><a href="contact.html"> CONTACT </a></li>
+                    </ul>
+                 </nav>
+                </div>
+                <h1> Let's Get in Touch! </h1>
+            </header>
+            <main> <!-- main content goes within this section -->
+                <form action="mailto:rhiraines03@gmail.com?Subject=Form%20Submission" method="POST" enctype="text/plain"> 
+                    <ul>
+                        <li> <label for="title"> Title: </label> <select id="title" name="title" required>
+                                <option value="" disabled selected>Select Title</option>
+                                <option>Mr.</option>
+                                <option>Mrs.</option>
+                                <option>Ms.</option>
+                                <option>Mx.</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label> Gender: </label>
+                            <div class="gender-options">
+                                <label for="male"> <input type="radio" id="male" name="gender" value="male" required> Male </label>  
+                                <label for="female"> <input type="radio" id="female" name="gender" value="female" required> Female </label>  
+                                <label for="non_binary"> <input type="radio" id="non_binary" name="gender" value="non_binary" required> Non-Binary </label> 
+                                <label for="prefer_not_to_say"> <input type="radio" id="prefer_not_to_say" name="gender" value="prefer_not_to_say" required> Prefer Not to Say </label> 
+                            </div>
+                        </li>
+                        <li> <label for="name"> Name: </label> <input type="text" id="name" name="name" placeholder="enter full name" required></li>
+                        <li> <label for="email"> Email: </label> <input type="email" id="email" name="email" placeholder="email" required></li>
+                        <li> <label for="message"> Message: </label>
+                            <textarea id="message" name="message" rows="5" cols="50" maxlength="500" placeholder="type your message here" required></textarea></li>
+                    </ul>
+                    <p><input type="submit" value="Submit"></p>
+                </form>    
+            </main>
+            <footer> <!-- Displayed at bottom of page.-->
+                <img src="webcontent/media/icons8-phone-30.png" alt="Telephone Icon"> 123-456-7890
+                <img src="webcontent/media/icons8-email-30.png" alt="Email Icon"> rhiraines03@gmail.com 
+                <p>Rhiannon E Chaffins -- Current Date: Sunday, 11/02/2025</p>
+            </footer>
+        </body>
+    </html>
