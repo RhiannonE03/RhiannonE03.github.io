@@ -241,13 +241,13 @@
         padding: 10px;
     }
 
-    .hamburger {
-        padding: 10px 20px;
-    }
-
     .primary-nav {
+        position: absolute;
+        top: 90px;
+        left: 0;
         width: 100%;
         order: 3;
+        z-index: 999;
     }
 
     .primary-nav > ul {
