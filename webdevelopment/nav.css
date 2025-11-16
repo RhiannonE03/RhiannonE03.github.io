@@ -128,8 +128,7 @@
         right: 0;
         bottom: 0;
         width: 30%;
-        height: calc(100vh - 77px);
-        bottom: 77px;
+        height: 100vh;
         background-color: #FADDDA;
         overflow-y: visible;
         z-index: 1000;
