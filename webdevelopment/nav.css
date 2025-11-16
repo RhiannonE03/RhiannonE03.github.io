@@ -238,6 +238,7 @@
 
     .logo {
         flex: 1;
+        padding: 10px;
     }
 
     .primary-nav {
