@@ -331,6 +331,11 @@ video {
     font-size: 180%;
 }
 
+.projects h4 {
+    color: #660000;
+    text-align: center;
+}
+
 .projects-container {
     grid-column: 1;
     display: flex;
@@ -389,6 +394,53 @@ iframe {
     margin: 20px auto;
 }
 
+table {
+    border: 2px solid #C3737F;
+    border-radius: 3px;
+    max-width: 450px;
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+caption {
+    color: #660000;
+    font-size: 21px;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FADDDA;
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    color: #660000;
+    font-family: "Playfair Display", Georgia, serif;
+    border-bottom: 2px solid #C3737F;
+    border-right: 2px solid #C3737F;
+}
+
+td {
+    padding: 10px 12px;
+    text-align: left;
+    color: #000000;
+    border-bottom: 2px solid #C3737F;
+    border-right: 2px solid #C3737F;
+}
+
+table a {
+    color: #660000;
+    text-decoration: none;
+}
+
+table a:hover {
+    color: #C3737F;
+    text-decoration: underline;
+}
+
 /* PROJECT PAGE RESPONSIVE STYLING - TABLET */
 @media (max-width: 1024px) {
     .projects {
@@ -431,7 +483,11 @@ iframe {
 
     #project03 iframe {
         max-width: 100%;
-        height: 380px;
+        height: 350px;
+    }
+
+    table {
+        max-width: 100%;
     }
 }
 

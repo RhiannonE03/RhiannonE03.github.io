@@ -1,0 +1,128 @@
+<!DOCTYPE html> <!-- This is the main HTML5 document declaration --> 
+    <html lang="en"> <!-- indicates intended language for webpage-->
+        <!--
+        Name: Rhiannon Chaffins
+        Date: 11/13/2025
+        Page: Template
+        Description: Boilerplate Template for Future Projects
+        -->
+        <head> 
+            <meta charset="utf-8"> <!-- Character encoding for the document -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile-friendly layout -->
+            <title> My Template </title> <!--This is the title of my web page listed on the tab section -->
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="../style.css"> <!-- Main CSS Stylesheet -->
+            <link rel="stylesheet" href="../nav.css"> <!-- Nav CSS Stylesheet-->
+            <link rel="stylesheet" href="Table_Practice.css">
+            <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+        </head>
+
+        <body> <!-- Contains visible content displayed on webpage-->
+            <header> <!-- Displayed at top of page -->
+                <div class="navigation">
+                <img src="../webcontent/media/Logo1.png" alt="Logo Image: Rhiannon Elizabeth" class="logo"> 
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">☰</label>
+                 <nav class="primary-nav">
+                    <ul>
+                        <li><a href="index.html"> HOME </a></li>
+                        <li><a href="about.html"> ABOUT </a></li>
+                        <li><a href="projects.html"> MY WORK </a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reflection.html"> REFLECTIONS </a></li>
+                        <li><a href="contact.html"> CONTACT </a></li>
+                    </ul>
+                 </nav>
+                </div>
+                <h1> My Starter Template </h1>
+            </header>
+            <main> <!-- main content goes within this section -->
+                <h3> Hello, world! </h3>
+                <p> This is my starter template. </p>
+
+                <h2> This is a Table Example </h2>
+
+                <table> <!--This says: create a table-->
+                    <tr> <!--This says: create a table row-->
+                        <th>Album</th> <!--table header-->
+                        <th>Year</th> <!--table header-->
+                    </tr> <!-- close table row -->
+                    <tr> <!-- create another table row! (remember rows are horizontal)-->
+                        <td>Rubber Soul</td> <!-- table cell data, similar to header, but not bolded or styled-->
+                        <td>1965</td> <!--this is a two row table, which means each row category needs two sections!-->
+                    </tr>
+                    <tr>
+                        <td>Revolver</td>
+                        <td>1966</td>
+                    </tr>
+                    <tr>
+                        <td>Sgt. Pepper's</td>
+                        <td>1967</td>
+                    </tr>
+                    <tr>
+                        <td>The White Album</td>
+                        <td>1968</td>
+                    </tr>
+                    <tr>
+                        <td>Abbey Road</td>
+                        <td>1969</td>
+                    <tr> <!--this is the end of our 5th table row-->
+                </table>
+
+                <h2> Let's Do Another One</h2>
+                <table>
+                    <caption>Your Content Here</caption>
+                    <colgroup></colgroup>
+                    <colgroup span="3"></colgroup>
+                    <thead>
+                    <tr>
+                        <th rowspan="2"></th>
+                        <th colspan="2">A common header for two subheads</th>
+                        <th rowspan="2">Header 3</th>
+                    </tr>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Thing A</th>
+                        <td>data A1</td>
+                        <td>data A2</td>
+                        <td>data A3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thing B </th>
+                        <td>data B1</td>
+                        <td>data B2</td>
+                        <td>data B3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thing C</th>
+                        <td>data C1</td>
+                        <td>data C2</td>
+                        <td>data C3</td>
+                    </tr>
+                    </tbody>
+                </table>
+                 
+            </main>
+            <footer> <!-- Displayed at bottom of page.-->
+                <img src="../webcontent/media/icons8-phone-30.png" alt="Telephone Icon"> 123-456-7890
+                <img src="../webcontent/media/icons8-email-30.png" alt="Email Icon"> rhiraines03@gmail.com 
+                <p>Rhiannon E Chaffins -- Current Date: Wednesday, 11/13/2025</p>
+            </footer>
+        </body>
+    </html>
