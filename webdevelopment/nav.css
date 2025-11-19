@@ -55,7 +55,7 @@
     background-color: #FFFFFF;
     padding: 5px;
     gap: 8px;
-    min-width: 115px;
+    min-width: 200px;
     z-index: 1000;
 }
 
@@ -178,13 +178,11 @@
     }
 
     .nav-dropdown {
-        position: absolute;
-        left: -152px;
-        top: 0;
+        position: static;
         transform: none;
         background-color: #FFFFFF;
-        box-shadow: 0 0 10px #FADDDA;
-        min-width: 150px;
+        box-shadow: none;
+        min-width: 100%;
         padding: 0;
         border-radius: 0;
         gap: 0;
