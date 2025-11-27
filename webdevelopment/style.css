@@ -5,11 +5,11 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+/* GENERAL CUSTOM FONT STYLES FOR ALL PAGES 
+ -- CUSTOM FONT FROM GOOGLE FONTS */
+h1, h2, h4 {
     color: #660000;
-    font-size: 300%;
     font-family: "Playfair Display", Georgia, serif;
-    margin-bottom: 30px;
 }
 
 h3 {
@@ -56,6 +56,10 @@ ul {
 
 .mainheading {
     padding-top: 27px;
+    color: #660000;
+    font-size: 300%;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 30px;
 }
 
 .explore-work, .learn-more, .in-touch {
@@ -177,11 +181,6 @@ ul {
 
 .about-section {
     margin: 15px;
-}
-
-.about-section h1 {
-    font-size: 200%;
-    font-family: "Playfair Display", Georgia, serif;
 }
 
 .education li {
@@ -319,28 +318,39 @@ video {
 }
 
 .projects p {
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 105%;
+    font-size: 110%;
     line-height: 1.6;
 }
 
-.projects h2 {
-    font-family: "Playfair Display", Georgia, serif;
+/* CUSTOM STYLES FOR ALL HEADING (h1, h2. h4) ELEMENTS ON PROJECT PAGE */
+.projects h1 {
     text-align: center;
-    color: #660000;
-    font-size: 180%;
+    margin-bottom: 0;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    text-shadow: .07em .07em #F5C9C5;
+}
+.projects h2 {
+    text-align: center;
+    letter-spacing: .5px;
+    text-shadow: .06em .06em .15em #F5C9C5;
 }
 
 .projects h4 {
     color: #660000;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-style:italic;
 }
+/* END OF CUSTOM STYLES FOR ALL HEADING (h1, h2. h4) ELEMENTS ON PROJECT PAGE */
 
 .projects-container {
     grid-column: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
+    margin-top: 0;
 }
 
 #recent {
@@ -461,13 +471,10 @@ table a:hover {
 
     .projects h2 {
         font-size: 165%;
-        color: #660000;
-        font-family: "Playfair Display", Georgia, serif;
     }
 
     .projects p {
-        font-size: 100%;
-        font-family: "Source Sans 3", sans-serif;
+        font-size: 105%;
     }
 
     .rschpaper {
@@ -500,12 +507,11 @@ table a:hover {
 
     .projects h2 {
         font-size: 140%;
-        color: #660000;
         margin-bottom: 15px;
     }
 
     .projects p {
-        font-size: 95%;
+        font-size: 100%;
         line-height: 1.4;
     }
 
@@ -582,9 +588,6 @@ table a:hover {
 
 .reflections-header {
     text-align: center;
-    color: #660000;
-    font-family: "Playfair Display", Georgia, Serif;
-
 }
 
 /*CONTACT PAGE STYLING */
@@ -711,9 +714,18 @@ footer img {
     height: 18px;
     vertical-align: middle;
     position: relative;
+    margin-right: 8px;
 }
 
 footer img:last-of-type {
     margin-left: 15px;
+    margin-right: 8px;
+}
+
+/* FOOTER ANIMATION */
+footer img:hover {
+    transform: scale(1.5);
+    filter: drop-shadow(0 0 3px #FADDDA) drop-shadow(0 0 3px #FADDDA);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
