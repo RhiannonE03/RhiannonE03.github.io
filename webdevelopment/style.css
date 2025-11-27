@@ -726,6 +726,6 @@ footer img:last-of-type {
 footer img:hover {
     transform: scale(1.5);
     filter: drop-shadow(0 0 3px #FADDDA) drop-shadow(0 0 3px #FADDDA);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
