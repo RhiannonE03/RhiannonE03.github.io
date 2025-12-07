@@ -5,11 +5,11 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+/* GENERAL CUSTOM FONT STYLES FOR ALL PAGES 
+ -- CUSTOM FONT FROM GOOGLE FONTS */
+h1, h2, h4 {
     color: #660000;
-    font-size: 300%;
     font-family: "Playfair Display", Georgia, serif;
-    margin-bottom: 30px;
 }
 
 h3 {
@@ -56,6 +56,10 @@ ul {
 
 .mainheading {
     padding-top: 27px;
+    color: #660000;
+    font-size: 300%;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 30px;
 }
 
 .explore-work, .learn-more, .in-touch {
@@ -69,7 +73,8 @@ ul {
     text-decoration: none;
 }
 
-.explore-work:hover, .learn-more:hover, .in-touch:hover {
+.explore-work:hover, .learn-more:hover, .in-touch:hover,
+.explore-work:focus, .learn-more:focus, .in-touch:focus {
     background-color:#FADDDA;
     color: #660000;
     text-decoration: none;
@@ -99,6 +104,25 @@ ul {
 .italic {
     font-style: italic;
     font-family: "Playfair Display", Georgia, serif;
+}
+
+@media (max-width:620px) {
+    .mainheading {
+        font-size: 235%;
+    }
+    .welcomestatement {
+        font-size: 105% !important;
+    }
+    .explore-work, .learn-more, .in-touch {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color:#660000;
+    color: white;
+    border-radius: 5px;
+    font-size: 100%;
+    text-decoration: none;
+}
 }
 
 /* ABOUT PAGE STYLING */
@@ -179,24 +203,21 @@ ul {
     margin: 15px;
 }
 
-.about-section h1 {
-    font-size: 200%;
-    font-family: "Playfair Display", Georgia, serif;
-}
-
 .education li {
     padding: 2px;
     list-style-type: circle;
 }
 
 .programlink {
-    color: #C3737F;
+    color: #660000;
     text-decoration:none;
+    font-weight: bold;
 }
 
-.programlink:hover {
+.programlink:hover, .programlink:focus {
     color:#660000;
     text-decoration:underline;
+    font-style: italic;
 }
 
 .education {
@@ -219,7 +240,7 @@ ul {
    width: 280px;
 }
 
-.resume-link:hover {
+.resume-link:hover, .resume-link:focus {
     background-color:#FADDDA;
     color: #660000;
 }
@@ -319,23 +340,39 @@ video {
 }
 
 .projects p {
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 105%;
+    font-size: 110%;
     line-height: 1.6;
 }
 
-.projects h2 {
-    font-family: "Playfair Display", Georgia, serif;
+/* CUSTOM STYLES FOR ALL HEADING (h1, h2. h4) ELEMENTS ON PROJECT PAGE */
+.projects h1 {
     text-align: center;
-    color: #660000;
-    font-size: 180%;
+    margin-bottom: 0;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    text-shadow: .07em .07em #F5C9C5;
 }
+.projects h2 {
+    text-align: center;
+    letter-spacing: .5px;
+    text-shadow: .06em .06em .15em #F5C9C5;
+}
+
+.projects h4 {
+    color: #660000;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-style:italic;
+}
+/* END OF CUSTOM STYLES FOR ALL HEADING (h1, h2. h4) ELEMENTS ON PROJECT PAGE */
 
 .projects-container {
     grid-column: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
+    margin-top: 0;
 }
 
 #recent {
@@ -354,22 +391,86 @@ video {
     padding: 10px;
 }
 
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #C3737F;
+    border-radius: 3px;
+}
+
+#project01 iframe,
+#recent iframe {
+    max-width: 450px;
+    width: 100%;
+    height: 550px;
+    border: 2px solid #C3737F;
+    border-radius: 3px;
+}
+
+#project03 iframe {
+    max-width: 450px;
+    width: 100%;
+    height: 450px;
+    border: 2px solid #C3737F;
+    border-radius: 3px;
+}
+
 .rschpaper {
     width: 100%;
-    max-width: 500px;
-    height: 350px;
-    border: 3px solid #660000;
+    max-width: 450px;
+    height: 300px;
+    border: 3px solid #C3737F;
     border-radius: 3px;
     display: block;
     margin: 20px auto;
 }
 
-.instagram-media-project1,
-.substack-post-embed,
-.instagram-media-recent {
-    max-width: 600px !important;
-    min-width: 300px !important;
-    margin: 20px auto !important;
+table {
+    border: 2px solid #C3737F;
+    border-radius: 3px;
+    max-width: 450px;
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+caption {
+    color: #660000;
+    font-size: 21px;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FADDDA;
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    color: #660000;
+    font-family: "Playfair Display", Georgia, serif;
+    border-bottom: 2px solid #C3737F;
+    border-right: 2px solid #C3737F;
+}
+
+td {
+    padding: 10px 12px;
+    text-align: left;
+    color: #000000;
+    border-bottom: 2px solid #C3737F;
+    border-right: 2px solid #C3737F;
+}
+
+table a {
+    color: #660000;
+    text-decoration: none;
+}
+
+table a:hover, table a:focus {
+    color: #C3737F;
+    text-decoration: underline;
 }
 
 /* PROJECT PAGE RESPONSIVE STYLING - TABLET */
@@ -392,24 +493,30 @@ video {
 
     .projects h2 {
         font-size: 165%;
-        color: #660000;
-        font-family: "Playfair Display", Georgia, serif;
     }
 
     .projects p {
-        font-size: 100%;
-        font-family: "Source Sans 3", sans-serif;
+        font-size: 105%;
     }
 
     .rschpaper {
-        max-width: 450px;
-        height: 320px;
+        max-width: 100%;
+        height: 280px;
     }
 
-    .instagram-media-project1,
-    .substack-post-embed,
-    .instagram-media-recent {
-        max-width: 500px !important;
+    #project01 iframe,
+    #recent iframe {
+        max-width: 100%;
+        height: 480px;
+    }
+
+    #project03 iframe {
+        max-width: 100%;
+        height: 350px;
+    }
+
+    table {
+        max-width: 100%;
     }
 }
 
@@ -422,12 +529,11 @@ video {
 
     .projects h2 {
         font-size: 140%;
-        color: #660000;
         margin-bottom: 15px;
     }
 
     .projects p {
-        font-size: 95%;
+        font-size: 100%;
         line-height: 1.4;
     }
 
@@ -445,11 +551,19 @@ video {
         border-width: 2px;
     }
 
-    .instagram-media-project1,
-    .substack-post-embed,
-    .instagram-media-recent {
-        max-width: 100% !important;
-        min-width: 280px !important;
+    #project01 iframe,
+    #recent iframe {
+        max-width: 100%;
+        width: 100%;
+        min-width: 280px;
+        height: 500px;
+    }
+    
+    #project03 iframe {
+        max-width: 100%;
+        width: 100%;
+        min-width: 280px;
+        height: 400px;
     }
 }
 
@@ -461,44 +575,33 @@ video {
     border-radius: 25px;
     font-family: "Source Sans 3", sans-serif;
     font-size: 100%;
-    text-align: justify;
-}
-
-.reflection-p-1:first-letter {
-    color: #C3737F;
-    font-size: 150%;
-    font-weight: bold;
-    font-family: "Playfair Display", Georgia, Serif;
-    padding: 1px;
-}
-
-.reflection-p-2,
-.reflection-p-3,
-.reflection-p-4 {
-    text-indent: 40px;
 }
 
 .reflection-p-1,
 .reflection-p-2,
 .reflection-p-3,
 .reflection-p-4 {
-    padding: 4px;
-}
-
-.reflection-p-1:hover,
-.reflection-p-2:hover,
-.reflection-p-3:hover,
-.reflection-p-4:hover {
-    background-color: #FADDDA;
-    border-radius: 5px;
-    padding: 4px;
+    padding: 4px 0 20px 10px;
 }
 
 .reflections-header {
     text-align: center;
-    color: #660000;
-    font-family: "Playfair Display", Georgia, Serif;
+}
 
+.reflection-subheader {
+    font-family: "Playfair Display", Georgia, serif;
+    text-align: left;
+    background-color: #FADDDA;
+    color: #660000;
+    border: 2px solid #C3737F;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.reflection-subheader img {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
 }
 
 /*CONTACT PAGE STYLING */
@@ -537,9 +640,10 @@ video {
     font-weight: bold;
     margin-bottom: 8px;
 }
+
 .contact-page .gender-options {
     padding: 15px 0;
-    border: 3px solid #660000;
+    border: 2px solid #660000;
     border-radius: 5px;
 }
 
@@ -549,7 +653,7 @@ video {
 .contact-page main form textarea {
     width: 100%;
     padding: 12px;
-    border: 3px solid #660000;
+    border: 2px solid #660000;
     border-radius: 5px;
     font-family: "Source Sans 3", sans-serif;
     font-size: 100%;
@@ -587,7 +691,7 @@ video {
    background-color: #660000;
    color: #FFFFFF;
    padding: 10px 30px;
-   border: 4px solid #660000;
+   border: 3px solid #660000;
    border-radius: 5px;
    font-size: 110%;
    font-family: "Playfair Display", Georgia, serif;
@@ -595,9 +699,10 @@ video {
    margin: 30px auto 0 auto;
 }
 
-.contact-page main form input[type="submit"]:hover {
+.contact-page main form input[type="submit"]:hover,
+.contact-page main form input[type="submit"]:focus {
     background-color: #C3737F;
-    border: 4px solid #660000;
+    border: 3px solid #660000;
 }
 
 .contact-page header h1 {
@@ -614,20 +719,46 @@ footer {
     width: 100%;
     background-color: #C3737F;
     height: 58px;
-    font-size: 85%;
+    font-size: 95%;
     text-align:center;
     padding-top: 15px;
     z-index: 50;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 footer img {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
     position: relative;
+    margin-right: 8px;
 }
 
 footer img:last-of-type {
     margin-left: 15px;
+    margin-right: 8px;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+    color: #660000;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 92%;
+    font-style: italic;
+    margin: 7px 0 0 0;
+}
+
+/* FOOTER ANIMATION */
+footer img:hover, footer img:focus {
+    transform: scale(1.5);
+    filter: drop-shadow(0 0 3px #FADDDA) drop-shadow(0 0 3px #FADDDA);
+    transition: transform 0.3s ease;
 }
 
