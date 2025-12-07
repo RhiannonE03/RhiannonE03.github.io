@@ -554,41 +554,33 @@ table a:hover, table a:focus {
     border-radius: 25px;
     font-family: "Source Sans 3", sans-serif;
     font-size: 100%;
-    text-align: justify;
-}
-
-.reflection-p-1:first-letter {
-    color: #C3737F;
-    font-size: 150%;
-    font-weight: bold;
-    font-family: "Playfair Display", Georgia, Serif;
-    padding: 1px;
-}
-
-.reflection-p-2,
-.reflection-p-3,
-.reflection-p-4 {
-    text-indent: 40px;
 }
 
 .reflection-p-1,
 .reflection-p-2,
 .reflection-p-3,
 .reflection-p-4 {
-    padding: 4px;
-}
-
-.reflection-p-1:hover,.reflection-p-1:focus,
-.reflection-p-2:hover,.reflection-p-2:focus,
-.reflection-p-3:hover,.reflection-p-3:focus,
-.reflection-p-4:hover,.reflection-p-4:focus {
-    background-color: #FADDDA;
-    border-radius: 5px;
-    padding: 4px;
+    padding: 4px 0 20px 10px;
 }
 
 .reflections-header {
     text-align: center;
+}
+
+.reflection-subheader {
+    font-family: "Playfair Display", Georgia, serif;
+    text-align: left;
+    background-color: #FADDDA;
+    color: #660000;
+    border: 2px solid #C3737F;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.reflection-subheader img {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
 }
 
 /*CONTACT PAGE STYLING */
@@ -627,6 +619,7 @@ table a:hover, table a:focus {
     font-weight: bold;
     margin-bottom: 8px;
 }
+
 .contact-page .gender-options {
     padding: 15px 0;
     border: 2px solid #660000;
