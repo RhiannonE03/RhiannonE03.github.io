@@ -42,7 +42,7 @@
     font-family: "Playfair Display", Georgia, serif;
 }
 
-.nav-dropdown {
+.nav-dropdown{
     display:none;
     flex-direction: column;
     position: absolute;
@@ -50,7 +50,7 @@
     top:100%;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 10px #FADDDA;
+    box-shadow: 0 0 10px #C3737F;
     border-radius: 4px;
     background-color: #FFFFFF;
     padding: 5px;
@@ -201,7 +201,8 @@
         border-bottom: none;
     }
 
-   .nav-dropdown li:hover {
+   .nav-dropdown li:hover, 
+   .nav-dropdown li:focus {
         background-color: #F0A39B;
    }
 
@@ -302,7 +303,8 @@
         border-bottom: none;
     }
 
-    .nav-dropdown li:hover {
+    .nav-dropdown li:hover,
+    .nav-dropdown li:focus {
         background-color: #F0A39B;
     }
 
