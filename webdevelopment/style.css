@@ -22,6 +22,7 @@ p {
     color: #000000;
     font-size: 105%;
     font-family: "Source Sans 3", sans-serif;
+    line-height: 1.5;
 }
 
 ul {
@@ -68,6 +69,7 @@ ul {
     margin: 10px;
     background-color:#660000;
     color: white;
+    border: #660000 2px solid;
     border-radius: 5px;
     font-size: 105%;
     text-decoration: none;
@@ -78,6 +80,8 @@ ul {
     background-color:#FADDDA;
     color: #660000;
     text-decoration: none;
+    border: #660000 2px solid;
+    border-radius: 5px;
 }
 .purpose {
     padding: 20px;
@@ -209,15 +213,15 @@ ul {
 }
 
 .programlink {
-    color: #000000;
+    color: #660000;
     text-decoration:none;
-    /*font-weight: bold;*/
+    font-weight: bold;
 }
 
 .programlink:hover, .programlink:focus {
-    color:#C3737F;
+    color:#660000;
     text-decoration:underline;
-    /*font-style: italic;*/
+    font-style: italic;
 }
 
 .education {
@@ -241,7 +245,7 @@ ul {
 }
 
 .resume-link:hover, .resume-link:focus {
-    /*background-color:#FADDDA;*/
+    background-color:#FADDDA;
     color: #660000;
 }
 
@@ -341,7 +345,7 @@ video {
 
 .projects p {
     font-size: 110%;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* CUSTOM STYLES FOR ALL HEADING (h1, h2. h4) ELEMENTS ON PROJECT PAGE */
