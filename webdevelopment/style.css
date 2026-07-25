@@ -126,7 +126,7 @@ ul {
 }
 
 /* ABOUT PAGE STYLING */
-@media print {
+/*@media print {
     .navigation, 
     .about-page-content header,
     .intro-about-photo img, 
@@ -197,7 +197,7 @@ ul {
 
 .h1-print-only {
     display: none;
-}
+}*/
 
 .about-section {
     margin: 15px;
@@ -209,15 +209,15 @@ ul {
 }
 
 .programlink {
-    color: #660000;
+    color: #000000;
     text-decoration:none;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .programlink:hover, .programlink:focus {
-    color:#660000;
+    color:#C3737F;
     text-decoration:underline;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 .education {
@@ -241,7 +241,7 @@ ul {
 }
 
 .resume-link:hover, .resume-link:focus {
-    background-color:#FADDDA;
+    /*background-color:#FADDDA;*/
     color: #660000;
 }
 
